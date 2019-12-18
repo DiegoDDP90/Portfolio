@@ -474,9 +474,13 @@
 .icon-trophy:before {
   content: "\f091";
 }
+
 .icon-github-square:before {
   content: "\f092";
 }
+
+
+
 .icon-upload:before {
   content: "\f093";
 }
@@ -507,6 +511,13 @@
 .icon-github:before {
   content: "\f09b";
 }
+
+.icon-github:before:hover {
+  
+    color: red;
+}
+
+
 .icon-unlock:before {
   content: "\f09c";
 }
@@ -1500,9 +1511,11 @@
 .icon-git-square:before {
   content: "\f1d2";
 }
+
 .icon-git:before {
   content: "\f1d3";
 }
+
 .icon-hacker-news:before {
   content: "\f1d4";
 }

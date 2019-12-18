@@ -40,6 +40,7 @@ hr {
     overflow: visible; }
 
 h1, h2, h3, h4, h5, h6 {
+    
     margin-top: 0;
     margin-bottom: 0.5rem; }
 
@@ -339,6 +340,8 @@ mark,
     padding-left: 0;
     list-style: none; }
 
+
+
 .list-inline {
     padding-left: 0;
     list-style: none; }
@@ -366,7 +369,12 @@ mark,
 .img-fluid {
 
     max-width: 100%;
-    height: auto; }
+    height: auto; 
+    -webkit-transition: 0.5s ease-out;
+-moz-transition: 0.5s ease-out;
+-o-transition: 0.5s ease-out;
+transition: 0.5s ease-out;
+}
 
 .img-fluid:hover {
     
@@ -9128,8 +9136,15 @@ textarea.form-control {
     font-weight: 600; }
 .ftco-footer .ftco-footer-widget ul li {
     margin-bottom: 10px; }
+
+
 .ftco-footer .ftco-footer-widget ul li a {
     color: rgba(255, 255, 255, 0.6); }
+
+.ftco-footer .ftco-footer-widget ul li a:hover {
+    color: white; }
+
+
 .ftco-footer .ftco-footer-widget ul li a span {
     color: rgba(255, 255, 255, 0.6); }
 .ftco-footer .ftco-footer-widget .btn-primary {
@@ -9424,16 +9439,43 @@ textarea.form-control {
 @media (max-width: 991.98px) {
     .contact-section .box {
         margin-bottom: 30px; } }
+
+
 .contact-section .box .icon {
     width: 100px;
     height: 100px;
+    background: #999999;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; 
+    -webkit-transition: 0.5s ease-out;
+-moz-transition: 0.5s ease-out;
+-o-transition: 0.5s ease-out;
+transition: 0.5s ease-out;
+}
+
+.contact-section .box .icon:hover {
+    
+    transition-duration: 0.3s;   
+    width: 120px;
+    height: 120px;
     background: #2dbeeb;
     margin: 0 auto;
     margin-bottom: 10px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 50%; 
+    -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+
+
+
 .contact-section .box .icon span {
     color: #fff;
     font-size: 30px; }
@@ -9759,3 +9801,20 @@ textarea.form-control {
     margin: auto;  
 
 }
+
+
+.icon-github:hover::before {
+  content: "\f09b";
+    color: white;
+}
+.icon-facebook:hover::before {
+  content: "\f09a";
+  color: white;  
+}
+
+
+.icon-instagram:hover::before {
+  content: "\f16d";
+  color: white;  
+}
+
