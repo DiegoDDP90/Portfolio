@@ -12,6 +12,7 @@
     box-sizing: border-box; }
 
 html {
+    
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -28,7 +29,9 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff; }
+    background-color: #fff; 
+    
+}
 
 [tabindex="-1"]:focus {
     outline: 0 !important; }
@@ -46,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin-top: 0;
+    text-align: justify;
     margin-bottom: 1rem; }
 
 abbr[title],
@@ -443,15 +447,19 @@ pre code {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto; }
+
 @media (min-width: 576px) {
     .container {
         max-width: 540px; } }
+
 @media (min-width: 768px) {
     .container {
         max-width: 720px; } }
+
 @media (min-width: 992px) {
     .container {
         max-width: 960px; } }
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px; } }
@@ -9816,5 +9824,8 @@ transition: 0.5s ease-out;
 .icon-instagram:hover::before {
   content: "\f16d";
   color: white;  
+}
+.paragraph_center{
+    text-align: center;
 }
 
